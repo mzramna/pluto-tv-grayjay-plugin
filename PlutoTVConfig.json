@@ -1,0 +1,84 @@
+{
+    "id": "7f8a9b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "name": "Pluto TV",
+    "version": 1,
+    "platformUrl": "https://pluto.tv",
+    "description": "Free live TV streaming service with 250+ channels",
+    "author": "FUTO",
+    "authorUrl": "https://futo.tech/",
+    "repositoryUrl": "https://github.com/yourusername/pluto-tv-grayjay-plugin",
+    "sourceUrl": "https://github.com/yourusername/pluto-tv-grayjay-plugin/raw/main/PlutoTVConfig.json",
+    "scriptUrl": "./PlutoTVScript.js",
+    "iconUrl": "./pluto-tv-icon.png",
+    "scriptSignature": "",
+    "scriptPublicKey": "",
+    "packages": [
+        "Http"
+    ],
+    "allowEval": false,
+    "allowUrls": [
+        "api.pluto.tv",
+        "images.pluto.tv",
+        "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "cfd-v4-service-channel-stitcher-use1-2.prd.pluto.tv"
+    ],
+    "settings": [
+        {
+            "variable": "region",
+            "name": "Region",
+            "description": "Pluto TV region for channel lineup",
+            "type": "Dropdown",
+            "default": "BR",
+            "options": [
+                "US",
+                "BR",
+                "GB",
+                "DE",
+                "FR",
+                "IT",
+                "ES",
+                "MX",
+                "AR",
+                "CL",
+                "CO",
+                "PE"
+            ]
+        },
+        {
+            "variable": "language",
+            "name": "Language",
+            "description": "Preferred language for channel names and metadata",
+            "type": "Dropdown",
+            "default": "pt",
+            "options": [
+                "en",
+                "pt",
+                "es",
+                "de",
+                "fr",
+                "it"
+            ]
+        }
+    ],
+    "testing": {
+        "GetContentDetails": {
+            "urls": [
+                "https://pluto.tv/channel/5f120e94a5714d00074576a1"
+            ]
+        },
+        "GetChannel": {
+            "urls": [
+                "https://pluto.tv/category/filmes"
+            ]
+        }
+    },
+    "changelog": {
+        "1": [
+            "Initial release",
+            "Feature: Live TV channels from Pluto TV",
+            "Feature: Category-based channel browsing",
+            "Feature: Search channels by name",
+            "Feature: HLS stream playback with ads stitched in"
+        ]
+    }
+}
