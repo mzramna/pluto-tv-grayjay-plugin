@@ -8,8 +8,8 @@
     "authorUrl": "https://futo.tech/",
     "repositoryUrl": "https://github.com/mzramna/pluto-tv-grayjay-plugin",
     "sourceUrl": "https://raw.githubusercontent.com/mzramna/pluto-tv-grayjay-plugin/main/PlutoTVConfig.json",
-    "scriptUrl": "./PlutoTVScript.js",
-    "iconUrl": "./pluto-tv-icon.png",
+    "scriptUrl": "https://raw.githubusercontent.com/mzramna/pluto-tv-graysjay-plugin/main/PlutoTVScript.js",
+    "iconUrl": "https://raw.githubusercontent.com/mzramna/pluto-tv-graysjay-plugin/main/pluto-tv-icon.png",
     "scriptSignature": "",
     "scriptPublicKey": "",
     "packages": [
